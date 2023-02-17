@@ -1,0 +1,97 @@
+<%- include('../Includes/begin.ejs') %>
+
+<link rel="stylesheet" href="../CSS/admin-dashboard.css">
+
+<div class="container-fluid">
+
+    <div id="wrapper">
+
+        <%- include('../Includes/admin_nav.ejs') %>
+
+        <section id="content-wrapper">
+            <main role="main" class="pt-5 main">
+                <div class="header pb-4 pb-sm-8 pt-5 pt-lg-4 d-flex align-items-center"
+                    style="max-height: 100px; background-size: cover; background-position: center top;">
+                    <h1>Hello <%= user.name %></h1>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card mb-5" style="box-shadow: 0 1rem 2rem 0 rgba(136, 152, 170, .15) !important;">
+                            <img height="254" class="card-img-top"
+                                src="https://img.freepik.com/free-vector/group-business-people-avatar-character_24877-57314.jpg?w=740&t=st=1664448944~exp=1664449544~hmac=f1537502a6af8911429374297c4cb0094d6962fc24c5a7d2e95b23d5a8e238a8"
+                                alt="image">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Manage Staff</b></h4>
+                                <p class="card-text">Manage your staff here. You can edit and
+                                    can add or remove a staff. All your changes will be reflected to them as well.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-wrapper text-center d-flex justify-content-between"
+                                    style="color: #fff;">
+                                    <a href="/admin/addStaff" style="color:white; background-color:rgb(46, 141, 179) ;" class="btn ">Add</a>
+                                    <a href="/admin/getStaff" class="btn btn-danger">Modify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card mb-5" style="box-shadow: 0 1rem 2rem 0 rgba(136, 152, 170, .15) !important;">
+                            <img height="250" class="card-img-top"
+                                src="https://img.freepik.com/free-vector/college-university-students-group-young-happy-people-standing-isolated-white-background_575670-66.jpg?w=740&t=st=1664449041~exp=1664449641~hmac=dafddadeaa0c4c4b526c29dd9b28b8581b3f430bb675ee884890dda943037b4a"
+                                alt="image">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Manage Student</b> </h4>
+                                <p class="card-text">Manage your student's profile here (edit/add/remove). All your
+                                    changes will be reflected to them as well.
+                                </p>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-wrapper text-center d-flex justify-content-between"
+                                    style="color: #fff;">
+                                    <a href="/admin/addStudent" style="color:white; background-color:rgb(46, 141, 179) ;" class="btn ">Add</a>
+                                    <a href="/admin/getStudent"  class="btn btn-danger">Modify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card mb-5" style="box-shadow: 0 1rem 2rem 0 rgba(136, 152, 170, .15) !important;">
+                            <img height="250" class="card-img-top"
+                                src="https://img.freepik.com/free-vector/student-with-laptop-studying-online-course_74855-5293.jpg?w=900&t=st=1664449110~exp=1664449710~hmac=dd986818a0360ba0434de8144b109b701aec58b95f18b85fc09608280a5d3320" alt="image">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Manage Courses</b></h4>
+                                <p class="card-text">Manage courses here (edit/add/remove). All your changes will be
+                                    reflected in the database.
+                                </p>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-wrapper text-center d-flex justify-content-between"
+                                    style="color: #fff;">
+                                    <a href="/admin/addCourse" style="color:white; background-color:rgb(46, 141, 179) ;" class="btn ">Add</a>
+                                    <a href="/admin/getCourse" class="btn btn-danger">Modify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </section>
+
+    </div>
+
+
+
+</div>
+
+
+
+<%- include('../Includes/admin_end.ejs') %>
